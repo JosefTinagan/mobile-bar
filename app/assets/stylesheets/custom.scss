@@ -48,7 +48,7 @@
 }
 
 .social-icons li a{
-	background-image: url(assets/sprite-no-repeat.svg);
+	background-image: url(image_path("sprite-no-repeat.svg"));
 	display: inline-block;
 }
 
@@ -122,7 +122,7 @@
 	right: 0;
 	height: 720px;
 	z-index: -1;
-	background: url(/assets/bar.jpg);
+	background: url(image_path("bar.jpg"));
 	background-size: cover;
 	display: block;
 }
