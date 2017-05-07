@@ -119,6 +119,7 @@
 /* Video Info */
 
 .video-info-container{
+	background-color: #DDD;
 	position: relative;
 	left: 0;
 	right: 0;
@@ -155,7 +156,31 @@
 }
 
 .home-page-pictures-container > div{
-	margin: 0 auto;
+	
+}
+
+/* Contact Us Section */
+
+.contact-us-container{
+	
+}
+
+.contact-us-container p{
+	font-size: 1.5em;
+}
+
+.contact-us-container h4{
+	font-weight: bold;
+}
+
+.contact-us-container span{
+	color: grey;
+}
+
+.img-contact{
+	border: none;
+	width: 100px;
+	height: 75px;
 }
 
 /* Main Footer */
