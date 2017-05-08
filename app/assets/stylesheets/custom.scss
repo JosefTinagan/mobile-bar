@@ -5,8 +5,17 @@
 
 /* Fixed Header Top Part */
 
+.container-space{
+	width: 100%;
+	height: 5px;
+
+}
+
 .fixed-header{
+	position: fixed;
 	opacity: 0.8;
+	z-index: 5;
+	width: 100%;
 }
 .fixed-header-top{
 
