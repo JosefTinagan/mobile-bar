@@ -12,7 +12,6 @@
 }
 
 .fixed-header{
-	position: fixed;
 	opacity: 0.8;
 	z-index: 5;
 	width: 100%;
@@ -22,6 +21,14 @@
 	color: white;	
 	height: 33px;
 }
+
+  /* Javascript Added Class */
+
+.sticky{
+	position: fixed;
+	background-color: black;
+}
+
 
 .follow-us{
 	padding: 5px;
