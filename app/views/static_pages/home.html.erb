@@ -101,25 +101,3 @@
 </div>
 
 
-<script>
-	var modal = document.getElementById("modal");
-
-	var img = document.getElementById("img1");
-	var modalImg = document.getElementById("img-modal");
-	var captionText = document.getElementById("caption");
-	var fixedHeader = document.getElementById("fixed-header");
-
-	img.onclick = function(){
-		modal.style.display = "block";
-		modalImg.src = this.src;
-		captionText.innerHTML = this.alt;
-		fixedHeader.style.display = "none";
-	}
-
-	var span = document.getElementsByClassName("close")[0];
-
-	span.onclick = function(){
-		modal.style.display = "none";
-		fixedHeader.style.display = "block";
-	}
-</script>
