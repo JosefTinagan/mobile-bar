@@ -5,7 +5,7 @@
 	<div class="container-space">
 		
 	</div>
-	<div class="container-fluid fixed-header">
+	<div id ="fixed-header" class="container-fluid fixed-header">
 		<div class="row top-section">
 			<div class="follow-us col-md-4 col-md-offset-8">
 				<span class="follow-us-text">Follow Us:</span>
@@ -56,7 +56,7 @@
 			</div>
 
 			<div id="modal" class="modal-container">
-				<span class="close">x</span>
+				<span class="close">&times;</span>
 				<img id="img-modal" class="modal-content">
 				<div id="caption"></div>
 			</div>
@@ -99,3 +99,27 @@
 		</div>
 	</div>
 </div>
+
+
+<script>
+	var modal = document.getElementById("modal");
+
+	var img = document.getElementById("img1");
+	var modalImg = document.getElementById("img-modal");
+	var captionText = document.getElementById("caption");
+	var fixedHeader = document.getElementById("fixed-header");
+
+	img.onclick = function(){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionText.innerHTML = this.alt;
+		fixedHeader.style.display = "none";
+	}
+
+	var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function(){
+		modal.style.display = "none";
+		fixedHeader.style.display = "block";
+	}
+</script>
