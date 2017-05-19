@@ -48,11 +48,17 @@
 		</div>
 		<div class="row home-page-pictures-container">
 			<div class="col-md-10 col-md-offset-1">
-				<%= image_tag("test.jpeg", class:"img-thumbnail") %>
-				<%= image_tag("glasses-stock.jpeg", class:"img-thumbnail") %>
-				<%= image_tag("glasses-stock.jpeg", class:"img-thumbnail") %>
-				<%= image_tag("glasses-stock.jpeg", class:"img-thumbnail") %>
-				<%= image_tag("glasses-stock.jpeg", class:"img-thumbnail") %>
+				<%= image_tag("test.jpeg", id: "img1", class:"img-thumbnail") %>
+				<%= image_tag("glasses-stock.jpeg", id: "img2", class:"img-thumbnail") %>
+				<%= image_tag("glasses-stock.jpeg", id: "img3",  class:"img-thumbnail") %>
+				<%= image_tag("glasses-stock.jpeg", id: "img4",  class:"img-thumbnail") %>
+				<%= image_tag("glasses-stock.jpeg", id: "img5",  class:"img-thumbnail") %>
+			</div>
+
+			<div id="modal" class="modal-container">
+				<span class="close">x</span>
+				<img id="img-modal" class="modal-content">
+				<div id="caption"></div>
 			</div>
 		</div>
 		<div class="row container-footer"></div>
